@@ -9,13 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "file-system": "^2.2.2",
     "moralis": "^1.8.0",
     "next": "12.1.5",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-moralis": "^1.4.0",
-    "web3uikit": "^0.1.159",
-    "file-system": "^2.2.2"
+    "react-router-dom": "^6.3.0",
+    "react-top-loading-bar": "^2.1.0",
+    "web3.storage": "^4.3.0",
+    "web3uikit": "^0.1.159"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.4",
