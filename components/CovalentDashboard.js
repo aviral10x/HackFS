@@ -4,17 +4,22 @@ import React, {useEffect, useState} from 'react'
 import { useMoralis } from "react-moralis"
 // import PropTypes from 'prop-types'
 
-const API_KEY = "ckey_cfe778e4677b4483b5b6211ec61"
-//0x0A90B83884870046B73441AF03b76c35C1d21763
 
-const CovalentDashboard = (props)=>{
-    const { account } = useMoralis()
+//0x0A90B83884870046B73441AF03b76c35C1d21763
+//0x797eF74d45DaAEbD7ad0567E4b1BB5a03F51b31d
+//0x06012c8cf97BEaD5deAe237070F9587f8E7A266d
+
+
+const CovalentDashboard = (props) => {
+    const API_KEY = "ckey_cfe778e4677b4483b5b6211ec61"
+    const { enableWeb3, isWeb3Enabled, isWeb3EnableLoading, account, Moralis, deactivateWeb3 } = useMoralis()
     const [arr, setArr] = useState([])
     const [loading, setLoading] = useState(true)
 
     const getPortfolio = async () => {
+     
         props.setProgress(10);
-        const url = `https://api.covalenthq.com/v1/1/address/0x0A90B83884870046B73441AF03b76c35C1d21763/balances_v2/?key=${API_KEY}` ;
+        const url = `https://api.covalenthq.com/v1/1/address/0x797eF74d45DaAEbD7ad0567E4b1BB5a03F51b31d/portfolio_v2/?key=${API_KEY}` ;
         setLoading(true)
 let response = await fetch(url);
 props.setProgress(30);
@@ -24,9 +29,11 @@ setArr(data.data.items)
 setLoading(false)
 props.setProgress(100);
     }
-    useEffect(() => {
-        getPortfolio(); 
-    }, [])
+        useEffect(() => {
+            // if () {
+               getPortfolio()
+            // }
+        }, [])
 
     return(
         <>
