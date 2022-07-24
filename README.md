@@ -53,11 +53,14 @@ the performUpkeep function will automatically execute the functions in a set tim
 
 ### **Tech Stack -**
 - **BACKEND -**
-- Chainlink
 - IPFS
-- Moralis
-- Hardhat
+- Ceramic
+- Covalent
+- POAP
 - Solidity
+- Hardhat
+- Spheron
+- Chainlink
 
 - **FRONTEND -**
 - Nextjs for the frontend app
