@@ -3,7 +3,7 @@ import LoadingBar from "react-top-loading-bar"
 import Competition from "../components/Competition"
 import Header from "../components/Header"
 
-function poap() {
+function Poap() {
     const [progress, setProgress] = useState(0)
     return (
         <>
@@ -19,4 +19,4 @@ function poap() {
     )
 }
 
-export default poap
+export default Poap

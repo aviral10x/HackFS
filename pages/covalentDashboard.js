@@ -2,7 +2,7 @@ import React, { useState } from "react"
 
 const API_KEY = "ckey_cfe778e4677b4483b5b6211ec61"
 
-function covalentDashboard() {
+function CovalentDashboard() {
 
      
 
@@ -136,4 +136,4 @@ const arr =  data.data.items;
         </>
     )
 }
-export default covalentDashboard
+export default CovalentDashboard
