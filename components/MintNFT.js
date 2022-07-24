@@ -80,20 +80,20 @@ export default function MintNFT() {
                                     <input
                                         type="text"
                                         placeholder="UserName"
-                                        className="border-[#334155] border bg-green-50 rounded-lg text-[#DBEAFE] py-2 px-10 w-[400px] mb-5"
+                                        className="border-[#334155] border bg-green-50 rounded-lg text-black py-2 px-10 w-[400px] mb-5"
                                         onChange={handleInputChange}
                                     />
                                     <input
                                         type="text"
                                         placeholder="Description"
-                                        className="border-[#334155] border bg-green-50 rounded-lg text-[#DBEAFE] py-2 px-10 w-[400px]"
+                                        className="border-[#334155] border bg-green-50 rounded-lg text-black py-2 px-10 w-[400px]"
                                         onChange={handleValueChange}
                                     />
                                 </div>
                                 <form>
                                     <input
                                         type="file"
-                                        className="border-[#334155] border bg-green-50 rounded-lg text-[#DBEAFE] py-2 px-10 w-[400px] mt-5"
+                                        className="border-[#334155] border bg-green-50 rounded-lg text-black py-2 px-10 w-[400px] mt-5"
                                         id="myFile"
                                         name="filename"
                                         ref={inputRef}
