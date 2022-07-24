@@ -12,7 +12,7 @@ export default function Dashboard({ }) {
               <link rel="icon" href="/favicon.ico" />
           </Head>
           <NavBar />
-          <FollowCard />
+          {/* <FollowCard /> */}
           <Feed />
       </div>
   )
