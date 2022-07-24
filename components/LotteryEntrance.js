@@ -131,7 +131,7 @@ export default function LotteryEntrance() {
                             )}
                         </button>
                         <div className="font-bold text-xl">
-                            Entrance Fee - {ethers.utils.formatUnits(entranceFee, "ether")} ETH
+                            Entrance Fee - {ethers.utils.formatUnits(entranceFee, "ether")} MATIC
                         </div>
                         <div className="font-bold text-xl">
                             The current number of players is - {numberOfPlayers}

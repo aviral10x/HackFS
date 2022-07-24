@@ -101,7 +101,7 @@ contract Raffle is VRFConsumerBaseV2, KeeperCompatibleInterface {
     {
         bool isOpen = RaffleState.OPEN == s_raffleState;
         bool timePassed = ((block.timestamp - s_lastTimeStamp) > i_interval);
-        bool hasPlayers = s_players.length > 0;
+        bool hasPlayers = s_players.length > 5;
         bool hasBalance = address(this).balance > 0;
         upkeepNeeded = (timePassed && isOpen && hasBalance && hasPlayers);
         return (upkeepNeeded, "0x0"); // can we comment this out?
