@@ -7,7 +7,7 @@ import React from 'react'
      <div className="flex flex-col">
                             <div className="border-gradient-1 font-roboto p-3 justify-center items-center">
                                 <img src={imageUrl} alt="add" width="100" height="200"></img>
-                                <h6 className="text-white">
+                                <h6 className="text-black font-semibold flex justify-center items-center">
                                     <span id="value">{value}</span>&nbsp;
                                     <span id="ticker">{ticker}</span>
                                 </h6>

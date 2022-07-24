@@ -68,30 +68,32 @@ export default function MintNFT() {
     return (
         <>
             <div className=" flex flex-col justify-center items-center">
-                <div className=" bg-[#0f172a4d] rounded-3xl p-7 mt-6">
+                <div className=" bg-green-100 rounded-3xl p-7 mt-6">
                     <div className="flex justify-between">
                         <div className="flex flex-col items-center">
                             <div className="flex flex-col items-center">
-                                <div className="font-bold text-2xl">MINT YOUR WORK AS AN NFT</div>
+                                <div className="font-bold text-2xl">
+                                    MINT YOUR WORK AS AN NFT
+                                </div>
 
                                 <div className="flex flex-col mt-8">
                                     <input
                                         type="text"
                                         placeholder="UserName"
-                                        className="border-[#334155] border bg-[#1E293B] rounded-lg text-[#DBEAFE] py-2 px-10 w-[400px] mb-5"
+                                        className="border-[#334155] border bg-green-50 rounded-lg text-[#DBEAFE] py-2 px-10 w-[400px] mb-5"
                                         onChange={handleInputChange}
                                     />
                                     <input
                                         type="text"
                                         placeholder="Description"
-                                        className="border-[#334155] border bg-[#1E293B] rounded-lg text-[#DBEAFE] py-2 px-10 w-[400px]"
+                                        className="border-[#334155] border bg-green-50 rounded-lg text-[#DBEAFE] py-2 px-10 w-[400px]"
                                         onChange={handleValueChange}
                                     />
                                 </div>
                                 <form>
                                     <input
                                         type="file"
-                                        className="border-[#334155] border bg-[#1E293B] rounded-lg text-[#DBEAFE] py-2 px-10 w-[400px] mt-5"
+                                        className="border-[#334155] border bg-green-50 rounded-lg text-[#DBEAFE] py-2 px-10 w-[400px] mt-5"
                                         id="myFile"
                                         name="filename"
                                         ref={inputRef}
@@ -100,7 +102,7 @@ export default function MintNFT() {
                             </div>
                             <div className="flex mt-10 mb-10 space-x-4">
                                 <button
-                                    className="font-roboto text-xl font-bold  border-2 px-[40px] py-2 border-[#6633FF] hover:bg-[#6633FF]"
+                                    className="font-roboto text-xl font-bold rounded-lg border-2 px-[40px] py-2  bg-[#7CBD1E] hover:bg-[#BCEB3C]"
                                     onClick={onSubmit}
                                 >
                                     MINT NFT

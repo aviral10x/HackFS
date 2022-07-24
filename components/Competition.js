@@ -42,21 +42,26 @@ const Competition = (props) => {
   }, [isWeb3Enabled])
 
   return (
-      <div>
-          <button
+      <div className="p-5">
+          {/* <button
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
               // onClick={getPoap}
           >
               POAP
-          </button>
-          <div className="grid-row-1 ">
-              {poap.map((element) => {
-                  return (
-                      <div className="flex" key={element.event.image_url}>
-                          <img src={element.event.image_url} width="100" height="100" />
-                      </div>
-                  )
-              })}
+          </button> */}
+          <div className="text-black font-bold text-3xl flex justify-center items-center pt-2 pb-4">
+              POAP
+          </div>
+          <div className="flex justify-center items-center">
+              <div className="grid grid-cols-3 gap-12 rounded-full">
+                  {poap.map((element) => {
+                      return (
+                          <div className=" rounded-full" key={element.event.image_url}>
+                              <img src={element.event.image_url} width="100" height="100" />
+                          </div>
+                      )
+                  })}
+              </div>
           </div>
       </div>
   )

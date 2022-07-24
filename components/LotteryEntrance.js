@@ -107,13 +107,13 @@ export default function LotteryEntrance() {
     }
 
     return (
-        <div className=" bg-[#0f172a4d] rounded-3xl p-7 mt-6">
+        <div className=" bg-green-100 rounded-3xl p-7 mt-6">
             <div>
                 <h1 className="py-4 px-4 font-bold text-3xl flex justify-center">Lottery</h1>
                 {raffleAddress ? (
                     <>
                         <button
-                            className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-auto"
+                            className=" bg-[#7CBD1E] hover:bg-[#BCEB3C] text-white font-bold py-2 px-4 rounded ml-auto"
                             onClick={async () =>
                                 await enterRaffle({
                                     // onComplete:

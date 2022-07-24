@@ -35,23 +35,39 @@ props.setProgress(100);
             // }
         }, [])
 
-    return(
+    return (
         <>
-        <h1 className="text-center"> Headlines</h1>
-        {loading && <Spinner />}
+            <h1 className="text-black font-bold text-3xl flex justify-center items-center pt-4 pb-4">
+                PORTFOLIO
+            </h1>
+            {loading && <Spinner />}
             <div className="container">
-                 
-            <div className="grid-row-1 ">
-                {arr.map((element) => {
-                    return <div className="grid-cols-4" key={element.logo_url}>
-                        <TokenItem ticker={element.contract_ticker_symbol ? element.contract_ticker_symbol : ""} value={(element.balance / Math.pow(10, 18)).toFixed(4)} imageUrl={element.logo_url ? element.logo_url : "www.covalenthq.com/static/images/icons/display-icons/ethereum-eth-logo.png"} />
+                <div className="flex justify-center items-center">
+                    <div className="grid grid-cols-3 gap-12">
+                        {arr.map((element) => {
+                            return (
+                                <div className="grid-cols-4" key={element.logo_url}>
+                                    <TokenItem
+                                        ticker={
+                                            element.contract_ticker_symbol
+                                                ? element.contract_ticker_symbol
+                                                : ""
+                                        }
+                                        value={(element.balance / Math.pow(10, 18)).toFixed(4)}
+                                        imageUrl={
+                                            element.logo_url
+                                                ? element.logo_url
+                                                : "www.covalenthq.com/static/images/icons/display-icons/ethereum-eth-logo.png"
+                                        }
+                                    />
+                                </div>
+                            )
+                        })}
                     </div>
-                })}
+                </div>
             </div>
-            </div> 
-        
-    </>
-    );
+        </>
+    )
 }
 
 export default CovalentDashboard;
