@@ -17,7 +17,7 @@ Core Objectives and Future Plans of Plants And Pillars-
 - 🎯 **GOAL**: Our Ultimate Goal is to reduce carbon emissions by planting more and more trees and educating people about our current environmental issues.
 
 
-### Implementation and MVP for Gitcoin **HackFS2022 Hackathon**
+### Implementation and MVP for **HackFS2022 Hackathon**
 
 ---
 
